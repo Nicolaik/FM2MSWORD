@@ -1,4 +1,6 @@
-# FM2MSWORD
+# FMMSWordIfy - current project name
+
+# FM2MSWORD - original unimaginative name
 
 The aim of the project is to replace text entries in MS WORD docx file from FileMaker
 
