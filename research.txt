@@ -13,3 +13,14 @@ zip -vr ../new_file.docx * -x "*.DS_Store"
 // article on uxzip: http://www.mactricksandtips.com/2008/08/unzipping-files-using-terminal.html
 
 // xslt to copy xml https://stackoverflow.com/questions/56837/how-can-i-make-an-exact-copy-of-a-xml-nodes-children-with-xslt
+
+
+//show hidden files
+
+defaults write com.apple.finder AppleShowAllFiles YES
+killall Finder /System/Library/CoreServices/Finder.app
+
+//transform and move
+
+xsltproc -o document.xml  transform.xsl unzipped/word/document.xml
+mv /Users/nicolai/Documents/Projects/FM2MSWORD/document.xml /Users/nicolai/Documents/Projects/FM2MSWORD/unzipped/word/document.xml
